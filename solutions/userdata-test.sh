@@ -9,6 +9,6 @@ dnf install git -y
 echo "${MyDBURI}"  > /home/ec2-user/dbserver.endpoint
 cd /home/ec2-user
 TOKEN=$(aws --region=us-east-1 ssm get-parameter --name /clarusway/phonebook/token --with-decryption --query 'Parameter.Value' --output text)
-git clone https://$TOKEN@github.com/aredo01/phone-web-app.git
-python3 /home/ec2-user/phonebook-web-app/solutions/phonebook-app.py
+git clone https://$TOKEN@github.com/aredo01/phonebook-web-application.git
+python3 /home/ec2-user/phonebook-web-application/solutions/phonebook-app.py
 

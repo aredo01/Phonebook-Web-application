@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clarusway Project - 004</title>
+  <title>AREDO PROJECT - 004</title>
   <style>
     body {
       max-width: 600px;
@@ -50,19 +50,18 @@
       color: red;
     }
 
-    .sectionnote{
+    .sectionnote {
       color: rgba(190, 31, 164, 0.89);
     }
-    .footnote{
+
+    .footnote {
       color: rgba(0, 0, 255, 0.712);
     }
-
   </style>
 </head>
-
 <body>
-
-  <div><img style="width:200px; height:50px" src="https://clarusway.com/wp-content/uploads/2022/12/clarusway-logo-black.png" /></div>
+  <div><img style="width:200px; height:50px"
+      src="https://clarusway.com/wp-content/uploads/2022/12/clarusway-logo-black.png" /></div>
 
   <h1>Project : Phonebook Application</h1>
   <h2>Welcome to {{developer_name}}'s Phonebook Application</h2>
@@ -78,12 +77,12 @@
     <p class="warning"><b>{{ message }}</b></p>
     {% endif %}
     {% if show_result %}
-      <h2 class="sectionnote"> {{ result_html }} </h1>
-    {% endif %}
+    <h2 class="sectionnote"> {{ result_html }} </h1>
+      {% endif %}
   </form>
 
-  <p class="footnote"><i>This app is developed in Python by <b>{{ developer_name }}</b> and deployed with Flask on AWS Cloud using Clouldformation Service.</i></p>
+  <p class="footnote"><i>This app is developed in Python by <b>{{ developer_name }}</b> and deployed with Flask on AWS
+      Cloud using Clouldformation Service.</i></p>
 </body>
 
 </html>
-    
